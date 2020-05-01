@@ -1,6 +1,0 @@
-for d in $(dir); do 
-	cd $d; 
-	git config --local http.sslVerify false;
-	git config --global credential.helper 'cache --timeout=3600';
-	cd ..; 
-done
