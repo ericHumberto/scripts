@@ -1,0 +1,4 @@
+cluster=$1
+environment=$2
+kubectl config get-contexts | grep $cluster | grep $environment | awk '{print $1}' 
+
