@@ -1,0 +1,1 @@
+kubectl edit configmaps -n $(kgetns $1)
