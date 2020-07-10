@@ -1,2 +1,3 @@
 pod=$1;
-kubectl get pods | grep $pod | awk '{print $1, $8}';
+ns=$2;
+kubectl get pods -n $ns | grep $pod | awk '{print $1, $8}';
