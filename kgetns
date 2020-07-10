@@ -1,0 +1,3 @@
+ns=$1
+ kubectl get ns | grep $ns |  awk '{print $1}'
+
