@@ -1,0 +1,2 @@
+kubectl logs $(kgetpod $1) -c $(kgetcontainer $1) -n $(kgetns $1)
+

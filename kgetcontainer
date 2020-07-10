@@ -1,0 +1,2 @@
+kubectl get pods -n $(kgetns $1) -o jsonpath="{.items[*].spec.containers[*].name}" | grep $1 | awk '{print $1}' 
+
